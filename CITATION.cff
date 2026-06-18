@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "VEGAN: Vision-language and Edge-enhanced GAN for Microscopic Medical Image Segmentation"
+version: 1.0.0
+date-released: 2025-06-01
+url: "https://github.com/souvikpramanik-medimg/VEGAN"
+repository-code: "https://github.com/souvikpramanik-medimg/VEGAN"
+license: MIT
+authors:
+  - family-names: Pramanik
+    given-names: Souvik
+    affiliation: "Defence Institute of Advanced Technology (DIAT), Pune, DRDO"
+    email: spramanik.diat23@gmail.com
+    orcid: "https://orcid.org/YOUR-ORCID-HERE"
+  - family-names: Maity
+    given-names: Gouranga
+    affiliation: "Jadavpur University, Kolkata"
+  - family-names: Mandal
+    given-names: Diptarka
+    affiliation: "Defence Institute of Advanced Technology (DIAT), Pune, DRDO"
+  - family-names: Kaplun
+    given-names: Dmitrii
+    affiliation: "China University of Mining and Technology; St. Petersburg ETU LETI"
+  - family-names: Gulvanskii
+    given-names: Vyacheslav
+    affiliation: "St. Petersburg Electrotechnical University LETI"
+  - family-names: Sarkar
+    given-names: Ram
+    affiliation: "Jadavpur University, Kolkata"
+preferred-citation:
+  type: conference-paper
+  title: "VEGAN: A Vision-language and Edge-enhanced GAN-based Microscopic Medical Image Segmentation Model"
+  authors:
+    - family-names: Maity
+      given-names: Gouranga
+    - family-names: Pramanik
+      given-names: Souvik
+    - family-names: Mandal
+      given-names: Diptarka
+    - family-names: Kaplun
+      given-names: Dmitrii
+    - family-names: Gulvanskii
+      given-names: Vyacheslav
+    - family-names: Sarkar
+      given-names: Ram
+  conference:
+    name: "14th Mediterranean Conference on Embedded Computing (MECO 2025)"
+    location: "Budva, Montenegro"
+  year: 2025
+  pages: "1-6"
+  publisher: IEEE
+  doi: "10.1109/MECO66322.2025.11049114"
+  url: "https://doi.org/10.1109/MECO66322.2025.11049114"

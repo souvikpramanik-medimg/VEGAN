@@ -1,0 +1,43 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="vegan-medseg",
+    version="1.0.0",
+    author="Souvik Pramanik",
+    author_email="spramanik.diat23@gmail.com",
+    description="VEGAN: Vision-language and Edge-enhanced GAN for Microscopic Medical Image Segmentation",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/souvikpramanik-medimg/VEGAN",
+    packages=find_packages(),
+    python_requires=">=3.8",
+    install_requires=[
+        "torch>=1.12.0",
+        "torchvision>=0.13.0",
+        "numpy>=1.21.0",
+        "Pillow>=9.0.0",
+        "opencv-python>=4.6.0",
+        "scikit-learn>=1.0.0",
+        "matplotlib>=3.5.0",
+        "tqdm>=4.64.0",
+        "ftfy>=6.1.1",
+        "regex>=2022.1.18",
+        "albumentations>=1.3.0",
+    ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    ],
+    keywords=[
+        "medical image segmentation",
+        "GAN",
+        "attention U-Net",
+        "CLIP",
+        "vision-language model",
+        "nuclei segmentation",
+        "deep learning",
+    ],
+)
