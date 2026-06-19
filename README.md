@@ -18,7 +18,50 @@
 
 VEGAN combines a custom Attention U-Net generator with fused edge maps (Sobel + Canny + Laplacian), CLIP-based Vision language embeddings (VLMs) injected into skip connections, and a Pix2Pix GAN with PatchGAN discriminator — achieving state-of-the-art microscopic medical image segmentation without any post-processing.
 
-> **Architecture figure:** see Fig. 1 in the [paper](https://doi.org/10.1109/MECO66322.2025.11049114).
+
+---
+
+## Architecture
+
+---
+
+## Generator Architecture
+
+<p align="center">
+  <img src="assets/generator_.png" width="90%">
+</p>
+
+**Figure 1.** Proposed Attention U-Net Generator with edge-enhanced feature fusion and CLIP-guided visual-language representations.
+
+---
+
+## Discriminator Architecture
+
+<p align="center">
+  <img src="assets/discriminator_.png" width="90%">
+</p>
+
+**Figure 2.** PatchGAN discriminator employed in VEGAN for adversarial learning and segmentation refinement.
+
+---
+
+## Overall VEGAN Framework
+
+<p align="center">
+  <img src="assets/vegan_overall_architecture.drawio.png" width="80%">
+</p>
+
+**Figure 3.** Overall Pipeline of the proposed model.
+
+---
+
+## Qualitative Results
+
+<p align="center">
+  <img src="assets/qualitative_results.png" width="100%">
+</p>
+
+**Figure 4.** Representative segmentation results showing input images, ground-truth masks, and corresponding VEGAN predictions.
 
 ---
 
