@@ -1,4 +1,4 @@
-# VEGAN: Vision-language and Edge-enhanced GAN for Microscopic Medical Image Segmentation
+# VEGAN: A Vision-language and Edge-enhanced GAN based Microscopic Medical Image Segmentation Model
 
 <p align="center">
   <a href="https://doi.org/10.1109/MECO66322.2025.11049114"><img src="https://img.shields.io/badge/Paper-IEEE%20MECO%202025-blue?style=flat-square&logo=ieee" alt="Paper"></a>
@@ -9,14 +9,14 @@
 
 <p align="center">
   <b>Gouranga Maity, Souvik Pramanik, Diptarka Mandal, Dmitrii Kaplun, Vyacheslav Gulvanskii, Ram Sarkar</b><br>
-  DIAT Pune, DRDO &nbsp;·&nbsp; Jadavpur University &nbsp;·&nbsp; St. Petersburg ETU "LETI"<br><br>
+  Jadavpur University &nbsp;·&nbsp; DIAT Pune, DRDO &nbsp;·&nbsp;  St. Petersburg ETU "LETI"<br><br>
   <i>14th Mediterranean Conference on Embedded Computing (MECO 2025), IEEE</i><br>
   DOI: <a href="https://doi.org/10.1109/MECO66322.2025.11049114">10.1109/MECO66322.2025.11049114</a>
 </p>
 
 ---
 
-VEGAN combines an Attention U-Net generator with fused edge maps (Sobel + Canny + Laplacian), CLIP-based vision-language embeddings injected into skip connections, and a Pix2Pix GAN with PatchGAN discriminator — achieving state-of-the-art microscopic medical image segmentation without any post-processing.
+VEGAN combines a custom Attention U-Net generator with fused edge maps (Sobel + Canny + Laplacian), CLIP-based Vision language embeddings (VLMs) injected into skip connections, and a Pix2Pix GAN with PatchGAN discriminator — achieving state-of-the-art microscopic medical image segmentation without any post-processing.
 
 > **Architecture figure:** see Fig. 1 in the [paper](https://doi.org/10.1109/MECO66322.2025.11049114).
 
@@ -27,15 +27,17 @@ VEGAN combines an Attention U-Net generator with fused edge maps (Sobel + Canny 
 If you use VEGAN in your research, please cite:
 
 ```bibtex
-@inproceedings{maity2025vegan,
-  title     = {{VEGAN}: A Vision-language and Edge-enhanced {GAN}-based Microscopic Medical Image Segmentation Model},
-  author    = {Maity, Gouranga and Pramanik, Souvik and Mandal, Diptarka and Kaplun, Dmitrii and Gulvanskii, Vyacheslav and Sarkar, Ram},
-  booktitle = {Proceedings of the 14th Mediterranean Conference on Embedded Computing (MECO)},
-  pages     = {1--6},
-  year      = {2025},
-  publisher = {IEEE},
-  doi       = {10.1109/MECO66322.2025.11049114}
-}
+@INPROCEEDINGS{11049114,
+  author={Maity, Gouranga and Pramanik, Souvik and Mandal, Diptarka and Kaplun, Dmitrii and Gulvanskii, Vyacheslav and Sarkar, Ram},
+  booktitle={2025 14th Mediterranean Conference on Embedded Computing (MECO)}, 
+  title={VEGAN: A Vision-language and Edge-enhanced GAN-based Microscopic Medical Image Segmentation Model}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Training;Image segmentation;Accuracy;Image edge detection;Microscopy;Computational modeling;Biological system modeling;Generative adversarial networks;Generators;Biomedical imaging;Medical Image;Nuclei Segmentation;GAN model;Attention U-Net;Edge Map;Vision Language Model},
+  doi={10.1109/MECO66322.2025.11049114}}
+
 ```
 
 ---
@@ -100,7 +102,7 @@ Download and place under `data/`:
 | Dataset | Task | Link |
 |---------|------|------|
 | [MoNuSeg](https://monuseg.grand-challenge.org/) | Multi-organ nuclei | [Grand Challenge](https://monuseg.grand-challenge.org/) |
-| [CNS](https://github.com/zhangzjn/CNS) | Cervical nuclei | [GitHub](https://github.com/zhangzjn/CNS) |
+| [CNS](https://github.com/zhangzjn/CNS) | Cervical nuclei | [GitHub](https://www.sciencedirect.com/science/article/abs/pii/S0010482519300848) |
 | [PH2](https://www.fc.up.pt/addi/ph2%20database.html) | Skin lesion (dermoscopy) | [ADDI Project](https://www.fc.up.pt/addi/ph2%20database.html) |
 
 Expected structure:
@@ -178,6 +180,6 @@ VEGAN/
 
 ## Acknowledgements
 
-This work was supported by the CMATER Research Lab, Department of Computer Science and Engineering, Jadavpur University, Kolkata, and the Modelling and Simulation Lab, DIAT Pune, DRDO.
+We are grateful to the [**CMATER Research Lab**](https://www.cmaterju.in/) of the Department of Computer Science and Engineering, Jadavpur University, Kolkata, India for providing vital infrastructural assistance.
 
 We build on [Attention U-Net](https://arxiv.org/abs/1804.03999), [Pix2Pix](https://arxiv.org/abs/1611.07004), [CLIP](https://arxiv.org/abs/2103.00020), and [CBAM](https://arxiv.org/abs/1807.06521).
